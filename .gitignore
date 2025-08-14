@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.env
+*.bak
+*.ipynb_checkpoints
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Data
+data/
+# Uncomment the line below if you want to ignore the data folder content as well,
+# but it's often useful to track small datasets in source control.
+#!data/heart.csv
+
+
