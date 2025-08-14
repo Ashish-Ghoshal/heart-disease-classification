@@ -1,9 +1,4 @@
-"""
-model_trainer.py
 
-This script contains functions for training and hyperparameter tuning
-Support Vector Machine (SVM) models using GridSearchCV.
-"""
 
 import os
 import joblib
@@ -15,21 +10,17 @@ from sklearn.metrics import classification_report, accuracy_score
 
 def train_and_tune_svm(X_train, y_train, X_test, y_test, kernel_type, models_path, results_path):
     """
-    Trains and tunes an SVM model for a given kernel type (linear or rbf).
-    Saves the best model, tuning results, and classification report.
+        Train and tune an SVM ('linear' or 'rbf'), save the best model and results.
 
-    Args:
-        X_train (np.array): Training features (fully preprocessed).
-        y_train (np.array): Training labels.
-        X_test (np.array): Testing features (fully preprocessed).
-        y_test (np.array): Testing labels.
-        kernel_type (str): 'linear' or 'rbf'.
-        models_path (str): Directory path to save trained models.
-        results_path (str): Directory path to save JSON results.
+        Args:
+            X_train, y_train: Training data.
+            X_test, y_test: Test data.
+            kernel_type: 'linear' or 'rbf'.
+            models_path: Path to save model.
+            results_path: Path to save results.
 
-    Returns:
-        sklearn.svm.SVC: The best trained SVM model.
-        dict: Classification report.
+        Returns:
+            Best SVM model, classification report dict.
     """
     print(f"\n[Step 2/X] Training and Tuning {kernel_type.upper()} SVM...")
 
@@ -76,7 +67,7 @@ def train_and_tune_svm(X_train, y_train, X_test, y_test, kernel_type, models_pat
     print(f"Best {kernel_type.upper()} SVM model saved to: {model_filename}")
 
     # Prepare cv_results_ for JSON serialization
-    # Convert numpy arrays in cv_results_ to lists
+
     serializable_cv_results = {k: v.tolist() if isinstance(v, np.ndarray) else v
                                for k, v in grid_search.cv_results_.items()}
 

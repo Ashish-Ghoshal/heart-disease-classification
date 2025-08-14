@@ -1,9 +1,4 @@
-"""
-data_loader.py
 
-This script handles loading, preprocessing, and splitting the Heart Disease UCI dataset.
-It applies imputation, scaling, one-hot encoding, and PCA for visualization.
-"""
 
 import os
 import pandas as pd
@@ -42,16 +37,16 @@ def load_and_preprocess_data(data_path, dataset_file='heart.csv', random_state=4
     # Convert 'num' to binary target: 0 (no disease) and 1 (disease present)
     df['target'] = df['num'].apply(lambda x: 1 if x > 0 else 0)
 
-    # Drop the original 'num' column, 'id', and 'dataset' as they are not features for modeling
+    
     df_cleaned = df.drop(columns=['num', 'id', 'dataset'])
 
-    # Identify categorical and numerical features
+    
     categorical_features = ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']
     numerical_features = [
         'age', 'trestbps', 'chol', 'thalch', 'oldpeak'
     ]
 
-    # Separate features (X_full) and target (y)
+    
     X_full = df_cleaned.drop(columns=['target'])
     y = df_cleaned['target'].values
 
@@ -69,7 +64,7 @@ def load_and_preprocess_data(data_path, dataset_file='heart.csv', random_state=4
         ('onehot', OneHotEncoder(handle_unknown='ignore'))
     ])
 
-    # Combine transformers using ColumnTransformer
+    
     preprocessor = ColumnTransformer(
         transformers=[
             ('num', numerical_transformer, numerical_features),
@@ -82,7 +77,7 @@ def load_and_preprocess_data(data_path, dataset_file='heart.csv', random_state=4
     print(f"\nShape of fully preprocessed X for training: {X_processed.shape}")
     print(f"Shape of y: {y.shape}")
 
-    # Split the fully preprocessed data for model training
+    
     X_train_processed, X_test_processed, y_train, y_test = train_test_split(
         X_processed, y, test_size=0.3, random_state=random_state, stratify=y
     )
@@ -92,9 +87,9 @@ def load_and_preprocess_data(data_path, dataset_file='heart.csv', random_state=4
 
     # Prepare data for 2D visualization using PCA
     pca = PCA(n_components=2, random_state=random_state)
-    X_pca = pca.fit_transform(X_processed) # Fit PCA on the entire processed dataset
+    X_pca = pca.fit_transform(X_processed) 
 
-    # Split the PCA-transformed data
+    
     X_train_pca, X_test_pca, _, _ = train_test_split(
         X_pca, y, test_size=0.3, random_state=random_state, stratify=y
     )

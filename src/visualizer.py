@@ -1,9 +1,4 @@
-"""
-visualizer.py
 
-This script contains functions for visualizing SVM decision boundaries,
-confusion matrices, and ROC AUC curves.
-"""
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -14,18 +9,16 @@ from sklearn.metrics import confusion_matrix, roc_curve, auc
 
 def plot_decision_boundary(X_pca, y, model, title, filename, feature_names, plots_path):
     """
-    Plots the decision boundary of an SVM classifier using PCA components.
-    A temporary 2D model is trained for visualization purposes, matching the
-    best hyperparameters of the full model.
+    Plots the SVM decision boundary using 2D PCA data.
 
     Args:
-        X_pca (np.array): PCA-transformed feature data (2D).
+        X_pca (np.array): 2D PCA features.
         y (np.array): Target labels.
-        model (sklearn.svm.SVC): The best trained SVM classifier (trained on full features).
-        title (str): Title for the plot.
-        filename (str): Name to save the plot file.
-        feature_names (list): Names of the two PCA components for axis labels.
-        plots_path (str): Directory path to save plot files.
+        model (sklearn.svm.SVC): Trained SVM model.
+        title (str): Plot title.
+        filename (str): Output filename.
+        feature_names (list): Axis labels.
+        plots_path (str): Directory to save plot.
     """
     print(f"\n[Step 3/X] Visualizing Decision Boundary for {title.split(' ')[0]} SVM...")
 
@@ -35,12 +28,8 @@ def plot_decision_boundary(X_pca, y, model, title, filename, feature_names, plot
     xx, yy = np.meshgrid(np.linspace(x_min, x_max, 100),
                          np.linspace(y_min, y_max, 100))
 
-    # To visualize the decision boundary of a model trained on high-dimensional data in 2D PCA space,
-    # we retrain a temporary 2D model on the PCA-transformed data that has the same best hyperparameters.
-    print(f"Retraining a temporary 2D {model.kernel} SVM for visualization based on PCA components.")
-    # Use the best C and gamma from the full model
-    # Note: 'gamma' parameter in SVC is 'scale' by default for RBF if not specified,
-    # but for explicit control and matching, we use it if kernel is RBF.
+     print(f"Retraining a temporary 2D {model.kernel} SVM for visualization based on PCA components.")
+
     temp_model_for_plot = SVC(kernel=model.kernel, C=model.C,
                               gamma=model.gamma if model.kernel == 'rbf' else 'scale',
                               random_state=42, probability=True) # probability=True for consistency if needed

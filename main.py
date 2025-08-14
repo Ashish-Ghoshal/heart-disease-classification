@@ -1,10 +1,4 @@
-"""
-main.py
 
-This script orchestrates the entire SVM classification pipeline for local execution.
-It handles data loading, preprocessing, model training, hyperparameter tuning,
-evaluation, and visualization by calling functions from modular scripts in 'src/'.
-"""
 
 import os
 import sys
@@ -13,7 +7,7 @@ import numpy as np
 # Add the 'src' directory to the Python path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
-# Import functions from the modular scripts
+
 from data_loader import load_and_preprocess_data
 from model_trainer import train_and_tune_svm
 from visualizer import plot_decision_boundary, plot_confusion_matrix, plot_roc_curve
@@ -22,7 +16,7 @@ def main():
     """
     Main function to run the SVM classification pipeline.
     """
-    # Define base paths for local execution
+    
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     DATA_PATH = os.path.join(BASE_DIR, 'data')
     MODELS_PATH = os.path.join(BASE_DIR, 'models')
@@ -52,7 +46,7 @@ def main():
     best_linear_svm = None
     best_rbf_svm = None
 
-    # ADDITION v11: Check for existing models and ask user to retrain
+    
     retrain_models = 'y' # Default to 'y' for initial run or if no models found
     
     if os.path.exists(linear_model_path) and os.path.exists(rbf_model_path):
@@ -82,10 +76,7 @@ def main():
             X_train, y_train, X_test, y_test, 'rbf', MODELS_PATH, RESULTS_PATH
         )
     else:
-        # If models were loaded, we still need the classification reports for consistency
-        # In a real scenario, you'd load the reports as well, but for simplicity here,
-        # we'll skip report generation if models are not retrained.
-        # Alternatively, you could load the existing JSON reports from RESULTS_PATH.
+
         print("Skipping model retraining. Proceeding with visualization using loaded models.")
 
 
