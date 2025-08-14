@@ -11,23 +11,28 @@ import seaborn as sns
 import os
 from sklearn.svm import SVC # Only needed for type hinting/temporary model creation for plots
 from sklearn.metrics import confusion_matrix, roc_curve, auc
+from sklearn.ensemble import VotingClassifier # Needed for type hint, if passing ensemble model directly
+
 
 def plot_decision_boundary(X_pca, y, model, title, filename, feature_names, plots_path):
     """
     Plots the decision boundary of an SVM classifier using PCA components.
     A temporary 2D model is trained for visualization purposes, matching the
-    best hyperparameters of the full model.
+    best hyperparameters of the full model. This function is primarily designed
+    for SVMs with C and gamma. For other models (LR, XGB, MLP), it trains a
+    temporary simple SVC on the PCA data to show *some* boundary, as their original
+    decision functions are more complex in reduced PCA space.
 
     Args:
         X_pca (np.array): PCA-transformed feature data (2D).
         y (np.array): Target labels.
-        model (sklearn.svm.SVC): The best trained SVM classifier (trained on full features).
+        model (object): The trained classifier (e.g., SVC, LogisticRegression, XGBClassifier, MLPClassifier).
         title (str): Title for the plot.
         filename (str): Name to save the plot file.
         feature_names (list): Names of the two PCA components for axis labels.
         plots_path (str): Directory path to save plot files.
     """
-    print(f"\n[Step 3/X] Visualizing Decision Boundary for {title.split(' ')[0]} SVM...")
+    print(f"\n[Step X/X] Visualizing Decision Boundary for {title.split(' ')[0]} Classifier...")
 
     # Create a mesh to plot in based on the 2D PCA data
     x_min, x_max = X_pca[:, 0].min() - 0.5, X_pca[:, 0].max() + 0.5
@@ -35,18 +40,23 @@ def plot_decision_boundary(X_pca, y, model, title, filename, feature_names, plot
     xx, yy = np.meshgrid(np.linspace(x_min, x_max, 100),
                          np.linspace(y_min, y_max, 100))
 
-    # To visualize the decision boundary of a model trained on high-dimensional data in 2D PCA space,
-    # we retrain a temporary 2D model on the PCA-transformed data that has the same best hyperparameters.
-    print(f"Retraining a temporary 2D {model.kernel} SVM for visualization based on PCA components.")
-    # Use the best C and gamma from the full model
-    # Note: 'gamma' parameter in SVC is 'scale' by default for RBF if not specified,
-    # but for explicit control and matching, we use it if kernel is RBF.
-    temp_model_for_plot = SVC(kernel=model.kernel, C=model.C,
-                              gamma=model.gamma if model.kernel == 'rbf' else 'scale',
-                              random_state=42, probability=True) # probability=True for consistency if needed
-    temp_model_for_plot.fit(X_pca, y) # Fit temporary model on 2D PCA data
+    # ADDITION v12: Handle decision boundary plotting for various model types.
+    # For non-SVM models, we'll fit a simple RBF SVM to the 2D PCA data for visualization.
+    # This gives a reasonable representation of a non-linear boundary in 2D space,
+    # even if the original model's boundary is different in high-dimensional space.
+    plot_model = None
+    if isinstance(model, SVC):
+        # Use the best C and gamma from the full SVC model for the temporary 2D plot
+        gamma_val = model.gamma if model.kernel == 'rbf' else 'scale'
+        plot_model = SVC(kernel=model.kernel, C=model.C, gamma=gamma_val,
+                         random_state=42, probability=True)
+    else:
+        # For other classifiers, fit a simple RBF SVM on the PCA data for visualization purposes
+        print(f"Note: For non-SVM models like {model.__class__.__name__}, a temporary RBF SVM is used to visualize a decision boundary in 2D PCA space.")
+        plot_model = SVC(kernel='rbf', C=10, gamma=0.1, random_state=42, probability=True) # Default RBF for plotting
 
-    Z = temp_model_for_plot.predict(np.c_[xx.ravel(), yy.ravel()])
+    plot_model.fit(X_pca, y) # Fit temporary model on 2D PCA data for plotting
+    Z = plot_model.predict(np.c_[xx.ravel(), yy.ravel()])
     Z = Z.reshape(xx.shape)
 
     plt.figure(figsize=(10, 7))
@@ -78,7 +88,7 @@ def plot_confusion_matrix(y_true, y_pred, model_name, filename, plots_path):
         filename (str): Name to save the plot file.
         plots_path (str): Directory path to save plot files.
     """
-    print(f"\n[Step 4/X] Plotting Confusion Matrix for {model_name}...")
+    print(f"\n[Step X/X] Plotting Confusion Matrix for {model_name}...")
     cm = confusion_matrix(y_true, y_pred)
     plt.figure(figsize=(8, 6))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar=False,
@@ -104,7 +114,7 @@ def plot_roc_curve(y_true, y_scores, model_name, filename, plots_path):
         filename (str): Name to save the plot file.
         plots_path (str): Directory path to save plot files.
     """
-    print(f"\n[Step 5/X] Plotting ROC Curve for {model_name}...")
+    print(f"\n[Step X/X] Plotting ROC Curve for {model_name}...")
     plt.figure(figsize=(8, 6))
     fpr, tpr, _ = roc_curve(y_true, y_scores)
     roc_auc = auc(fpr, tpr)

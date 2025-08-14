@@ -1,0 +1,776 @@
+{
+    "best_params": {
+        "hidden_layer_sizes": [
+            50
+        ],
+        "activation": "relu",
+        "solver": "adam",
+        "alpha": 0.006784008719643246,
+        "learning_rate_init": 0.00011559910420730071
+    },
+    "best_cv_score": 0.8183260658914729,
+    "study_trials_dataframe": [
+        {
+            "number": 0,
+            "value": 0.7685440891472869,
+            "datetime_start": "2025-08-14 15:10:01.313651",
+            "datetime_complete": "2025-08-14 15:10:02.869653",
+            "duration": "0 days 00:00:01.556002",
+            "params_activation": "relu",
+            "params_alpha": 0.0008950278941414839,
+            "params_hidden_layer_sizes": [
+                100
+            ],
+            "params_learning_rate_init": 0.0007482574161011806,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 1,
+            "value": 0.8090116279069768,
+            "datetime_start": "2025-08-14 15:10:02.870652",
+            "datetime_complete": "2025-08-14 15:10:03.244959",
+            "duration": "0 days 00:00:00.374307",
+            "params_activation": "relu",
+            "params_alpha": 0.0008821664304130571,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0008978936385743541,
+            "params_solver": "sgd",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 2,
+            "value": 0.7965358527131784,
+            "datetime_start": "2025-08-14 15:10:03.245953",
+            "datetime_complete": "2025-08-14 15:10:04.176944",
+            "duration": "0 days 00:00:00.930991",
+            "params_activation": "tanh",
+            "params_alpha": 0.00011077436367302584,
+            "params_hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "params_learning_rate_init": 0.00018108292096091316,
+            "params_solver": "sgd",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 3,
+            "value": 0.7763808139534885,
+            "datetime_start": "2025-08-14 15:10:04.177945",
+            "datetime_complete": "2025-08-14 15:10:05.766066",
+            "duration": "0 days 00:00:01.588121",
+            "params_activation": "tanh",
+            "params_alpha": 2.0236328684207487e-05,
+            "params_hidden_layer_sizes": [
+                100
+            ],
+            "params_learning_rate_init": 0.0009734558229625179,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 4,
+            "value": 0.8121366279069768,
+            "datetime_start": "2025-08-14 15:10:05.767063",
+            "datetime_complete": "2025-08-14 15:10:06.331060",
+            "duration": "0 days 00:00:00.563997",
+            "params_activation": "relu",
+            "params_alpha": 1.169455993763581e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00019916291863527239,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 5,
+            "value": 0.777906976744186,
+            "datetime_start": "2025-08-14 15:10:06.332060",
+            "datetime_complete": "2025-08-14 15:10:08.021561",
+            "duration": "0 days 00:00:01.689501",
+            "params_activation": "relu",
+            "params_alpha": 0.0005625493780337505,
+            "params_hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "params_learning_rate_init": 0.0007413572385231645,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 6,
+            "value": 0.760828488372093,
+            "datetime_start": "2025-08-14 15:10:08.022571",
+            "datetime_complete": "2025-08-14 15:10:09.386881",
+            "duration": "0 days 00:00:01.364310",
+            "params_activation": "tanh",
+            "params_alpha": 0.009533977446372669,
+            "params_hidden_layer_sizes": [
+                100,
+                50
+            ],
+            "params_learning_rate_init": 0.0021558937382421058,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 7,
+            "value": 0.7701550387596899,
+            "datetime_start": "2025-08-14 15:10:09.387883",
+            "datetime_complete": "2025-08-14 15:10:09.934921",
+            "duration": "0 days 00:00:00.547038",
+            "params_activation": "relu",
+            "params_alpha": 0.00015831566918743045,
+            "params_hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "params_learning_rate_init": 0.00478973799943838,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 8,
+            "value": 0.8105620155038761,
+            "datetime_start": "2025-08-14 15:10:09.935925",
+            "datetime_complete": "2025-08-14 15:10:10.493915",
+            "duration": "0 days 00:00:00.557990",
+            "params_activation": "tanh",
+            "params_alpha": 0.007055279456849647,
+            "params_hidden_layer_sizes": [
+                100,
+                50
+            ],
+            "params_learning_rate_init": 0.00010279265131208798,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 9,
+            "value": 0.8043483527131784,
+            "datetime_start": "2025-08-14 15:10:10.494952",
+            "datetime_complete": "2025-08-14 15:10:11.672922",
+            "duration": "0 days 00:00:01.177970",
+            "params_activation": "relu",
+            "params_alpha": 0.004174371203492856,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0003085697261619391,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 10,
+            "value": 0.8059108527131784,
+            "datetime_start": "2025-08-14 15:10:11.673916",
+            "datetime_complete": "2025-08-14 15:10:12.225017",
+            "duration": "0 days 00:00:00.551101",
+            "params_activation": "relu",
+            "params_alpha": 1.0962771165120015e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0003170373300199831,
+            "params_solver": "sgd",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 11,
+            "value": 0.8105620155038761,
+            "datetime_start": "2025-08-14 15:10:12.227013",
+            "datetime_complete": "2025-08-14 15:10:12.779018",
+            "duration": "0 days 00:00:00.552005",
+            "params_activation": "tanh",
+            "params_alpha": 4.5407932709963464e-05,
+            "params_hidden_layer_sizes": [
+                100,
+                50
+            ],
+            "params_learning_rate_init": 0.00010207686485153986,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 12,
+            "value": 0.8105620155038761,
+            "datetime_start": "2025-08-14 15:10:12.780018",
+            "datetime_complete": "2025-08-14 15:10:13.333019",
+            "duration": "0 days 00:00:00.553001",
+            "params_activation": "tanh",
+            "params_alpha": 0.002721192821939136,
+            "params_hidden_layer_sizes": [
+                100,
+                50
+            ],
+            "params_learning_rate_init": 0.00011205204871605902,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 13,
+            "value": 0.8121002906976745,
+            "datetime_start": "2025-08-14 15:10:13.334014",
+            "datetime_complete": "2025-08-14 15:10:13.600018",
+            "duration": "0 days 00:00:00.266004",
+            "params_activation": "tanh",
+            "params_alpha": 5.408951597969909e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00028184192307354985,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 14,
+            "value": 0.8074612403100776,
+            "datetime_start": "2025-08-14 15:10:13.601020",
+            "datetime_complete": "2025-08-14 15:10:14.136761",
+            "duration": "0 days 00:00:00.535741",
+            "params_activation": "relu",
+            "params_alpha": 4.073284615340553e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00033637265241067955,
+            "params_solver": "sgd",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 15,
+            "value": 0.805874515503876,
+            "datetime_start": "2025-08-14 15:10:14.137696",
+            "datetime_complete": "2025-08-14 15:10:14.421703",
+            "duration": "0 days 00:00:00.284007",
+            "params_activation": "tanh",
+            "params_alpha": 5.0007661936099226e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00046955907120801164,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 16,
+            "value": 0.7561773255813954,
+            "datetime_start": "2025-08-14 15:10:14.422701",
+            "datetime_complete": "2025-08-14 15:10:15.539698",
+            "duration": "0 days 00:00:01.116997",
+            "params_activation": "tanh",
+            "params_alpha": 1.0713514120186142e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0020345475481332092,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 17,
+            "value": 0.8121366279069766,
+            "datetime_start": "2025-08-14 15:10:15.541695",
+            "datetime_complete": "2025-08-14 15:10:16.154700",
+            "duration": "0 days 00:00:00.613005",
+            "params_activation": "relu",
+            "params_alpha": 0.00016964144711945452,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0001878467861460702,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 18,
+            "value": 0.8105620155038759,
+            "datetime_start": "2025-08-14 15:10:16.155693",
+            "datetime_complete": "2025-08-14 15:10:16.889044",
+            "duration": "0 days 00:00:00.733351",
+            "params_activation": "relu",
+            "params_alpha": 0.00024259507423381649,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00018462086491324815,
+            "params_solver": "sgd",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 19,
+            "value": 0.7763808139534885,
+            "datetime_start": "2025-08-14 15:10:16.890103",
+            "datetime_complete": "2025-08-14 15:10:17.802326",
+            "duration": "0 days 00:00:00.912223",
+            "params_activation": "relu",
+            "params_alpha": 0.00010363459903283584,
+            "params_hidden_layer_sizes": [
+                100
+            ],
+            "params_learning_rate_init": 0.0078957724234993,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 20,
+            "value": 0.7810198643410853,
+            "datetime_start": "2025-08-14 15:10:17.803327",
+            "datetime_complete": "2025-08-14 15:10:18.995247",
+            "duration": "0 days 00:00:01.191920",
+            "params_activation": "relu",
+            "params_alpha": 0.000377574156813916,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0016993716789306793,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 21,
+            "value": 0.8152252906976744,
+            "datetime_start": "2025-08-14 15:10:18.996246",
+            "datetime_complete": "2025-08-14 15:10:19.651253",
+            "duration": "0 days 00:00:00.655007",
+            "params_activation": "relu",
+            "params_alpha": 2.4405578962464428e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00024036173044151687,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 22,
+            "value": 0.8121366279069766,
+            "datetime_start": "2025-08-14 15:10:19.652245",
+            "datetime_complete": "2025-08-14 15:10:20.204250",
+            "duration": "0 days 00:00:00.552005",
+            "params_activation": "relu",
+            "params_alpha": 2.297676041795794e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0001693585347687508,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 23,
+            "value": 0.8074612403100774,
+            "datetime_start": "2025-08-14 15:10:20.205254",
+            "datetime_complete": "2025-08-14 15:10:21.385785",
+            "duration": "0 days 00:00:01.180531",
+            "params_activation": "relu",
+            "params_alpha": 2.1851794012379976e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0005097689497665686,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 24,
+            "value": 0.813687015503876,
+            "datetime_start": "2025-08-14 15:10:21.386786",
+            "datetime_complete": "2025-08-14 15:10:21.983779",
+            "duration": "0 days 00:00:00.596993",
+            "params_activation": "relu",
+            "params_alpha": 1.577053854722807e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0002035541813905409,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 25,
+            "value": 0.8090116279069767,
+            "datetime_start": "2025-08-14 15:10:21.984787",
+            "datetime_complete": "2025-08-14 15:10:23.152240",
+            "duration": "0 days 00:00:01.167453",
+            "params_activation": "relu",
+            "params_alpha": 1.6222470272805674e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0004895577678822203,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 26,
+            "value": 0.8074612403100776,
+            "datetime_start": "2025-08-14 15:10:23.153240",
+            "datetime_complete": "2025-08-14 15:10:23.780182",
+            "duration": "0 days 00:00:00.626942",
+            "params_activation": "relu",
+            "params_alpha": 3.0368626483381635e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00024192640206517488,
+            "params_solver": "sgd",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 27,
+            "value": 0.8043483527131784,
+            "datetime_start": "2025-08-14 15:10:23.781186",
+            "datetime_complete": "2025-08-14 15:10:25.879646",
+            "duration": "0 days 00:00:02.098460",
+            "params_activation": "relu",
+            "params_alpha": 8.272663472070276e-05,
+            "params_hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "params_learning_rate_init": 0.00013488693777054692,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 28,
+            "value": 0.7950096899224807,
+            "datetime_start": "2025-08-14 15:10:25.880647",
+            "datetime_complete": "2025-08-14 15:10:27.616952",
+            "duration": "0 days 00:00:01.736305",
+            "params_activation": "relu",
+            "params_alpha": 1.081304342457041e-05,
+            "params_hidden_layer_sizes": [
+                100
+            ],
+            "params_learning_rate_init": 0.0004116240058221317,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 29,
+            "value": 0.7981468023255814,
+            "datetime_start": "2025-08-14 15:10:27.617949",
+            "datetime_complete": "2025-08-14 15:10:29.215955",
+            "duration": "0 days 00:00:01.598006",
+            "params_activation": "relu",
+            "params_alpha": 1.6750237611924874e-05,
+            "params_hidden_layer_sizes": [
+                100
+            ],
+            "params_learning_rate_init": 0.00023560572962801518,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 30,
+            "value": 0.7872456395348838,
+            "datetime_start": "2025-08-14 15:10:29.216951",
+            "datetime_complete": "2025-08-14 15:10:30.491049",
+            "duration": "0 days 00:00:01.274098",
+            "params_activation": "relu",
+            "params_alpha": 3.249654222351345e-05,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0006892292583947501,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 31,
+            "value": 0.8136749031007753,
+            "datetime_start": "2025-08-14 15:10:30.492049",
+            "datetime_complete": "2025-08-14 15:10:31.058919",
+            "duration": "0 days 00:00:00.566870",
+            "params_activation": "relu",
+            "params_alpha": 0.0017690120553199896,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00014943348393148078,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 32,
+            "value": 0.8136870155038759,
+            "datetime_start": "2025-08-14 15:10:31.059919",
+            "datetime_complete": "2025-08-14 15:10:31.606925",
+            "duration": "0 days 00:00:00.547006",
+            "params_activation": "relu",
+            "params_alpha": 0.002608002877212346,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00015748895894072282,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 33,
+            "value": 0.8136749031007753,
+            "datetime_start": "2025-08-14 15:10:31.607927",
+            "datetime_complete": "2025-08-14 15:10:32.158851",
+            "duration": "0 days 00:00:00.550924",
+            "params_activation": "relu",
+            "params_alpha": 0.0017507590661613962,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00014401354141589038,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 34,
+            "value": 0.8089995155038758,
+            "datetime_start": "2025-08-14 15:10:32.159854",
+            "datetime_complete": "2025-08-14 15:10:33.027852",
+            "duration": "0 days 00:00:00.867998",
+            "params_activation": "relu",
+            "params_alpha": 0.0012119165016826867,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00014357395252177646,
+            "params_solver": "sgd",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 35,
+            "value": 0.8152252906976744,
+            "datetime_start": "2025-08-14 15:10:33.028854",
+            "datetime_complete": "2025-08-14 15:10:33.670853",
+            "duration": "0 days 00:00:00.641999",
+            "params_activation": "relu",
+            "params_alpha": 0.0007608682746730358,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0002368923159352991,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 36,
+            "value": 0.7670421511627906,
+            "datetime_start": "2025-08-14 15:10:33.671846",
+            "datetime_complete": "2025-08-14 15:10:34.919244",
+            "duration": "0 days 00:00:01.247398",
+            "params_activation": "relu",
+            "params_alpha": 0.0007290820684154852,
+            "params_hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "params_learning_rate_init": 0.0012738238722681996,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 37,
+            "value": 0.8136627906976743,
+            "datetime_start": "2025-08-14 15:10:34.920241",
+            "datetime_complete": "2025-08-14 15:10:35.518237",
+            "duration": "0 days 00:00:00.597996",
+            "params_activation": "relu",
+            "params_alpha": 0.00040991595377798043,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0002341006509560903,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 38,
+            "value": 0.8043483527131784,
+            "datetime_start": "2025-08-14 15:10:35.520237",
+            "datetime_complete": "2025-08-14 15:10:36.167234",
+            "duration": "0 days 00:00:00.646997",
+            "params_activation": "relu",
+            "params_alpha": 0.001080743399461358,
+            "params_hidden_layer_sizes": [
+                100
+            ],
+            "params_learning_rate_init": 0.0006618410655220588,
+            "params_solver": "sgd",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 39,
+            "value": 0.7809714147286823,
+            "datetime_start": "2025-08-14 15:10:36.168232",
+            "datetime_complete": "2025-08-14 15:10:38.969081",
+            "duration": "0 days 00:00:02.800849",
+            "params_activation": "relu",
+            "params_alpha": 0.00446314327248968,
+            "params_hidden_layer_sizes": [
+                100,
+                50
+            ],
+            "params_learning_rate_init": 0.00036164120801979844,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 40,
+            "value": 0.7779190891472869,
+            "datetime_start": "2025-08-14 15:10:38.970080",
+            "datetime_complete": "2025-08-14 15:10:39.633090",
+            "duration": "0 days 00:00:00.663010",
+            "params_activation": "relu",
+            "params_alpha": 0.0005808296980006643,
+            "params_hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "params_learning_rate_init": 0.0033286143877380085,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 41,
+            "value": 0.8136749031007753,
+            "datetime_start": "2025-08-14 15:10:39.635080",
+            "datetime_complete": "2025-08-14 15:10:40.185087",
+            "duration": "0 days 00:00:00.550007",
+            "params_activation": "relu",
+            "params_alpha": 0.002073841841146302,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00013362330934454022,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 42,
+            "value": 0.8105620155038761,
+            "datetime_start": "2025-08-14 15:10:40.186087",
+            "datetime_complete": "2025-08-14 15:10:40.829315",
+            "duration": "0 days 00:00:00.643228",
+            "params_activation": "relu",
+            "params_alpha": 0.0015588193978577725,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00023181523397632423,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 43,
+            "value": 0.8121366279069766,
+            "datetime_start": "2025-08-14 15:10:40.830316",
+            "datetime_complete": "2025-08-14 15:10:41.438322",
+            "duration": "0 days 00:00:00.608006",
+            "params_activation": "relu",
+            "params_alpha": 0.0033095504592352437,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00016817679867937727,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 44,
+            "value": 0.8152252906976745,
+            "datetime_start": "2025-08-14 15:10:41.439326",
+            "datetime_complete": "2025-08-14 15:10:42.218317",
+            "duration": "0 days 00:00:00.778991",
+            "params_activation": "relu",
+            "params_alpha": 0.005745482197033527,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00012476128579870464,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 45,
+            "value": 0.8167756782945738,
+            "datetime_start": "2025-08-14 15:10:42.219323",
+            "datetime_complete": "2025-08-14 15:10:42.877591",
+            "duration": "0 days 00:00:00.658268",
+            "params_activation": "relu",
+            "params_alpha": 0.006985490757812653,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00011927119561047433,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 46,
+            "value": 0.8183260658914729,
+            "datetime_start": "2025-08-14 15:10:42.878666",
+            "datetime_complete": "2025-08-14 15:10:43.624248",
+            "duration": "0 days 00:00:00.745582",
+            "params_activation": "relu",
+            "params_alpha": 0.006784008719643246,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00011559910420730071,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 47,
+            "value": 0.8105620155038761,
+            "datetime_start": "2025-08-14 15:10:43.625247",
+            "datetime_complete": "2025-08-14 15:10:44.264920",
+            "duration": "0 days 00:00:00.639673",
+            "params_activation": "tanh",
+            "params_alpha": 0.00992360270684805,
+            "params_hidden_layer_sizes": [
+                100,
+                50
+            ],
+            "params_learning_rate_init": 0.00011525550715316473,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 48,
+            "value": 0.8152252906976745,
+            "datetime_start": "2025-08-14 15:10:44.266925",
+            "datetime_complete": "2025-08-14 15:10:45.028792",
+            "duration": "0 days 00:00:00.761867",
+            "params_activation": "relu",
+            "params_alpha": 0.007238201516365283,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.00010429880760600633,
+            "params_solver": "adam",
+            "state": "COMPLETE"
+        },
+        {
+            "number": 49,
+            "value": 0.8058866279069766,
+            "datetime_start": "2025-08-14 15:10:45.029326",
+            "datetime_complete": "2025-08-14 15:10:46.107928",
+            "duration": "0 days 00:00:01.078602",
+            "params_activation": "relu",
+            "params_alpha": 0.00584558164486434,
+            "params_hidden_layer_sizes": [
+                50
+            ],
+            "params_learning_rate_init": 0.0001156324146823863,
+            "params_solver": "sgd",
+            "state": "COMPLETE"
+        }
+    ]
+}

@@ -2,7 +2,7 @@
 data_loader.py
 
 This script handles loading, preprocessing, and splitting the Heart Disease UCI dataset.
-It applies imputation, scaling, one-hot encoding, and PCA for visualization.
+It applies imputation, scaling, one-hot encoding, feature selection, and PCA for visualization.
 """
 
 import os
@@ -14,11 +14,13 @@ from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.decomposition import PCA
+from sklearn.ensemble import RandomForestClassifier # ADDITION v12: For feature selection
+from sklearn.feature_selection import SelectFromModel # ADDITION v12: For feature selection
 
 def load_and_preprocess_data(data_path, dataset_file='heart.csv', random_state=42):
     """
     Loads the Heart Disease UCI dataset, preprocesses it for binary classification,
-    splits it into training and testing sets, and scales features.
+    applies feature selection, splits it into training and testing sets, and scales features.
     It also prepares a PCA-transformed version of the data for 2D visualization.
 
     Args:
@@ -74,12 +76,27 @@ def load_and_preprocess_data(data_path, dataset_file='heart.csv', random_state=4
         transformers=[
             ('num', numerical_transformer, numerical_features),
             ('cat', categorical_transformer, categorical_features)
-        ])
+        ],
+        remainder='passthrough' # Keep other columns if any, though not expected here
+    )
 
     # Fit and transform the full dataset using the preprocessor
-    X_processed = preprocessor.fit_transform(X_full)
+    X_processed_initial = preprocessor.fit_transform(X_full)
 
-    print(f"\nShape of fully preprocessed X for training: {X_processed.shape}")
+    print(f"\nShape of initially preprocessed X: {X_processed_initial.shape}")
+
+    # ADDITION v12: Feature Selection using RandomForest Importance
+    # We will use a RandomForestClassifier to get feature importances
+    # and then select features based on a threshold.
+    print("Performing Feature Selection...")
+    feature_selector = SelectFromModel(RandomForestClassifier(n_estimators=100, random_state=random_state),
+                                       threshold='median') # Select features with importance > median
+    feature_selector.fit(X_processed_initial, y)
+    X_processed = feature_selector.transform(X_processed_initial)
+    print(f"Shape of X after feature selection: {X_processed.shape}")
+    print(f"Number of features selected: {X_processed.shape[1]}")
+
+    print(f"Shape of fully preprocessed X for training: {X_processed.shape}")
     print(f"Shape of y: {y.shape}")
 
     # Split the fully preprocessed data for model training
@@ -90,9 +107,9 @@ def load_and_preprocess_data(data_path, dataset_file='heart.csv', random_state=4
     print(f"\nTraining set shape: X_train={X_train_processed.shape}, y_train={y_train.shape}")
     print(f"Testing set shape: X_test={X_test_processed.shape}, y_test={y_test.shape}")
 
-    # Prepare data for 2D visualization using PCA
+    # Prepare data for 2D visualization using PCA on the selected features
     pca = PCA(n_components=2, random_state=random_state)
-    X_pca = pca.fit_transform(X_processed) # Fit PCA on the entire processed dataset
+    X_pca = pca.fit_transform(X_processed) # Apply PCA on the feature-selected dataset
 
     # Split the PCA-transformed data
     X_train_pca, X_test_pca, _, _ = train_test_split(

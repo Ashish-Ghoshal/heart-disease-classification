@@ -4,3 +4,5 @@ scikit-learn==1.4.2
 matplotlib==3.8.4
 seaborn==0.13.2
 joblib==1.4.0
+optuna==3.6.1 # ADDITION v12: For Bayesian optimization
+xgboost==2.0.2 # ADDITION v12: For Gradient Boosting model

@@ -1,0 +1,458 @@
+{
+    "best_params": {
+        "C": 0.007541291305449788
+    },
+    "best_cv_score": 0.813638565891473,
+    "study_trials_dataframe": [
+        {
+            "number": 0,
+            "value": 0.7996850775193799,
+            "datetime_start": "2025-08-14 15:34:39.284513",
+            "datetime_complete": "2025-08-14 15:35:08.881217",
+            "duration": "0 days 00:00:29.596704",
+            "params_C": 3279.902475894562,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 1,
+            "value": 0.7981346899224807,
+            "datetime_start": "2025-08-14 15:35:08.882218",
+            "datetime_complete": "2025-08-14 15:35:09.860353",
+            "duration": "0 days 00:00:00.978135",
+            "params_C": 29.0696587670534,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 2,
+            "value": 0.7996850775193799,
+            "datetime_start": "2025-08-14 15:35:09.861358",
+            "datetime_complete": "2025-08-14 15:35:10.666360",
+            "duration": "0 days 00:00:00.805002",
+            "params_C": 14.220049213258424,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 3,
+            "value": 0.7996850775193799,
+            "datetime_start": "2025-08-14 15:35:10.667361",
+            "datetime_complete": "2025-08-14 15:35:11.273361",
+            "duration": "0 days 00:00:00.606000",
+            "params_C": 9.623007264902299,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 4,
+            "value": 0.7981225775193799,
+            "datetime_start": "2025-08-14 15:35:11.274361",
+            "datetime_complete": "2025-08-14 15:35:11.336310",
+            "duration": "0 days 00:00:00.061949",
+            "params_C": 2.0205119503634017,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 5,
+            "value": 0.8058987403100776,
+            "datetime_start": "2025-08-14 15:35:11.337418",
+            "datetime_complete": "2025-08-14 15:35:11.381051",
+            "duration": "0 days 00:00:00.043633",
+            "params_C": 0.011707553926533465,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 6,
+            "value": 0.7996850775193799,
+            "datetime_start": "2025-08-14 15:35:11.382052",
+            "datetime_complete": "2025-08-14 15:35:29.913454",
+            "duration": "0 days 00:00:18.531402",
+            "params_C": 1869.501255064219,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 7,
+            "value": 0.8058987403100776,
+            "datetime_start": "2025-08-14 15:35:29.914453",
+            "datetime_complete": "2025-08-14 15:35:29.946448",
+            "duration": "0 days 00:00:00.031995",
+            "params_C": 0.01632579403634027,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 8,
+            "value": 0.5527979651162791,
+            "datetime_start": "2025-08-14 15:35:29.947447",
+            "datetime_complete": "2025-08-14 15:35:29.994452",
+            "duration": "0 days 00:00:00.047005",
+            "params_C": 0.0004559938285818783,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 9,
+            "value": 0.7996850775193799,
+            "datetime_start": "2025-08-14 15:35:29.995452",
+            "datetime_complete": "2025-08-14 15:35:45.879075",
+            "duration": "0 days 00:00:15.883623",
+            "params_C": 1643.0577031109126,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 10,
+            "value": 0.7996850775193799,
+            "datetime_start": "2025-08-14 15:35:45.880077",
+            "datetime_complete": "2025-08-14 15:35:45.911071",
+            "duration": "0 days 00:00:00.030994",
+            "params_C": 0.03903599305845629,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 11,
+            "value": 0.8089874031007753,
+            "datetime_start": "2025-08-14 15:35:45.913072",
+            "datetime_complete": "2025-08-14 15:35:45.976069",
+            "duration": "0 days 00:00:00.062997",
+            "params_C": 0.012874870394441091,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 12,
+            "value": 0.5527979651162791,
+            "datetime_start": "2025-08-14 15:35:45.978068",
+            "datetime_complete": "2025-08-14 15:35:46.039073",
+            "duration": "0 days 00:00:00.061005",
+            "params_C": 0.0001901413447792438,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 13,
+            "value": 0.8012354651162792,
+            "datetime_start": "2025-08-14 15:35:46.040072",
+            "datetime_complete": "2025-08-14 15:35:46.085138",
+            "duration": "0 days 00:00:00.045066",
+            "params_C": 0.023665631553589934,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 14,
+            "value": 0.7980983527131784,
+            "datetime_start": "2025-08-14 15:35:46.086073",
+            "datetime_complete": "2025-08-14 15:35:46.149081",
+            "duration": "0 days 00:00:00.063008",
+            "params_C": 0.002676374412649383,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 15,
+            "value": 0.7965721899224807,
+            "datetime_start": "2025-08-14 15:35:46.150087",
+            "datetime_complete": "2025-08-14 15:35:46.195076",
+            "duration": "0 days 00:00:00.044989",
+            "params_C": 0.35185333798646884,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 16,
+            "value": 0.7981346899224807,
+            "datetime_start": "2025-08-14 15:35:46.196079",
+            "datetime_complete": "2025-08-14 15:35:46.243069",
+            "duration": "0 days 00:00:00.046990",
+            "params_C": 0.17232274845749265,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 17,
+            "value": 0.8027495155038761,
+            "datetime_start": "2025-08-14 15:35:46.244069",
+            "datetime_complete": "2025-08-14 15:35:46.289147",
+            "duration": "0 days 00:00:00.045078",
+            "params_C": 0.003343597265806466,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 18,
+            "value": 0.7918725775193799,
+            "datetime_start": "2025-08-14 15:35:46.290071",
+            "datetime_complete": "2025-08-14 15:35:46.353133",
+            "duration": "0 days 00:00:00.063062",
+            "params_C": 0.001902296780061388,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 19,
+            "value": 0.7981346899224807,
+            "datetime_start": "2025-08-14 15:35:46.354150",
+            "datetime_complete": "2025-08-14 15:35:46.400075",
+            "duration": "0 days 00:00:00.045925",
+            "params_C": 0.08556649496166635,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 20,
+            "value": 0.7996729651162792,
+            "datetime_start": "2025-08-14 15:35:46.401077",
+            "datetime_complete": "2025-08-14 15:35:46.447069",
+            "duration": "0 days 00:00:00.045992",
+            "params_C": 1.1307674102824068,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 21,
+            "value": 0.8120881782945737,
+            "datetime_start": "2025-08-14 15:35:46.448136",
+            "datetime_complete": "2025-08-14 15:35:46.493075",
+            "duration": "0 days 00:00:00.044939",
+            "params_C": 0.007624146719815869,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 22,
+            "value": 0.8120881782945737,
+            "datetime_start": "2025-08-14 15:35:46.494071",
+            "datetime_complete": "2025-08-14 15:35:46.541075",
+            "duration": "0 days 00:00:00.047004",
+            "params_C": 0.008663818035425703,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 23,
+            "value": 0.5527979651162791,
+            "datetime_start": "2025-08-14 15:35:46.542081",
+            "datetime_complete": "2025-08-14 15:35:46.603075",
+            "duration": "0 days 00:00:00.060994",
+            "params_C": 0.0001086380854046309,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 24,
+            "value": 0.6320373062015504,
+            "datetime_start": "2025-08-14 15:35:46.604081",
+            "datetime_complete": "2025-08-14 15:35:46.649078",
+            "duration": "0 days 00:00:00.044997",
+            "params_C": 0.0009134347869676919,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 25,
+            "value": 0.8011991279069768,
+            "datetime_start": "2025-08-14 15:35:46.650075",
+            "datetime_complete": "2025-08-14 15:35:46.712140",
+            "duration": "0 days 00:00:00.062065",
+            "params_C": 0.0032338871820636146,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 26,
+            "value": 0.8120881782945737,
+            "datetime_start": "2025-08-14 15:35:46.713134",
+            "datetime_complete": "2025-08-14 15:35:46.743075",
+            "duration": "0 days 00:00:00.029941",
+            "params_C": 0.008826844070625825,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 27,
+            "value": 0.7965721899224807,
+            "datetime_start": "2025-08-14 15:35:46.744076",
+            "datetime_complete": "2025-08-14 15:35:46.791075",
+            "duration": "0 days 00:00:00.046999",
+            "params_C": 0.346784569622248,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 28,
+            "value": 0.7996850775193799,
+            "datetime_start": "2025-08-14 15:35:46.792070",
+            "datetime_complete": "2025-08-14 15:35:48.977115",
+            "duration": "0 days 00:00:02.185045",
+            "params_C": 192.84085452015077,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 29,
+            "value": 0.7965964147286823,
+            "datetime_start": "2025-08-14 15:35:48.978116",
+            "datetime_complete": "2025-08-14 15:35:49.009116",
+            "duration": "0 days 00:00:00.031000",
+            "params_C": 0.06810177831259491,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 30,
+            "value": 0.5527979651162791,
+            "datetime_start": "2025-08-14 15:35:49.010119",
+            "datetime_complete": "2025-08-14 15:35:49.087119",
+            "duration": "0 days 00:00:00.077000",
+            "params_C": 0.0006385574183691043,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 31,
+            "value": 0.8089752906976745,
+            "datetime_start": "2025-08-14 15:35:49.088117",
+            "datetime_complete": "2025-08-14 15:35:49.149124",
+            "duration": "0 days 00:00:00.061007",
+            "params_C": 0.008073386055947152,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 32,
+            "value": 0.813638565891473,
+            "datetime_start": "2025-08-14 15:35:49.150116",
+            "datetime_complete": "2025-08-14 15:35:49.195122",
+            "duration": "0 days 00:00:00.045006",
+            "params_C": 0.007541291305449788,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 33,
+            "value": 0.8120881782945737,
+            "datetime_start": "2025-08-14 15:35:49.196126",
+            "datetime_complete": "2025-08-14 15:35:49.226197",
+            "duration": "0 days 00:00:00.030071",
+            "params_C": 0.005911418458189831,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 34,
+            "value": 0.6459907945736434,
+            "datetime_start": "2025-08-14 15:35:49.227152",
+            "datetime_complete": "2025-08-14 15:35:49.274165",
+            "duration": "0 days 00:00:00.047013",
+            "params_C": 0.0009241680431479404,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 35,
+            "value": 0.7996850775193799,
+            "datetime_start": "2025-08-14 15:35:49.275117",
+            "datetime_complete": "2025-08-14 15:35:49.396587",
+            "duration": "0 days 00:00:00.121470",
+            "params_C": 6.302111140273695,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 36,
+            "value": 0.7965721899224807,
+            "datetime_start": "2025-08-14 15:35:49.397127",
+            "datetime_complete": "2025-08-14 15:35:49.442683",
+            "duration": "0 days 00:00:00.045556",
+            "params_C": 0.12167607722026229,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 37,
+            "value": 0.7996850775193799,
+            "datetime_start": "2025-08-14 15:35:49.443621",
+            "datetime_complete": "2025-08-14 15:35:49.474611",
+            "duration": "0 days 00:00:00.030990",
+            "params_C": 0.039340170727928316,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 38,
+            "value": 0.8120881782945737,
+            "datetime_start": "2025-08-14 15:35:49.475649",
+            "datetime_complete": "2025-08-14 15:35:49.520617",
+            "duration": "0 days 00:00:00.044968",
+            "params_C": 0.005610026683445826,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 39,
+            "value": 0.7981225775193799,
+            "datetime_start": "2025-08-14 15:35:49.521614",
+            "datetime_complete": "2025-08-14 15:35:49.598617",
+            "duration": "0 days 00:00:00.077003",
+            "params_C": 3.10935191639473,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 40,
+            "value": 0.5527979651162791,
+            "datetime_start": "2025-08-14 15:35:49.598617",
+            "datetime_complete": "2025-08-14 15:35:49.662620",
+            "duration": "0 days 00:00:00.064003",
+            "params_C": 0.0003860917300038961,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 41,
+            "value": 0.8120881782945737,
+            "datetime_start": "2025-08-14 15:35:49.663614",
+            "datetime_complete": "2025-08-14 15:35:49.694675",
+            "duration": "0 days 00:00:00.031061",
+            "params_C": 0.008554143299707597,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 42,
+            "value": 0.8027858527131784,
+            "datetime_start": "2025-08-14 15:35:49.695611",
+            "datetime_complete": "2025-08-14 15:35:49.740617",
+            "duration": "0 days 00:00:00.045006",
+            "params_C": 0.029737377987848947,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 43,
+            "value": 0.7965358527131784,
+            "datetime_start": "2025-08-14 15:35:49.740617",
+            "datetime_complete": "2025-08-14 15:35:49.788621",
+            "duration": "0 days 00:00:00.048004",
+            "params_C": 0.0021051617806777966,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 44,
+            "value": 0.7981225775193799,
+            "datetime_start": "2025-08-14 15:35:49.789612",
+            "datetime_complete": "2025-08-14 15:35:49.834622",
+            "duration": "0 days 00:00:00.045010",
+            "params_C": 0.3842675007839297,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 45,
+            "value": 0.8120881782945737,
+            "datetime_start": "2025-08-14 15:35:49.835613",
+            "datetime_complete": "2025-08-14 15:35:49.880617",
+            "duration": "0 days 00:00:00.045004",
+            "params_C": 0.006205019058551226,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 46,
+            "value": 0.8074491279069769,
+            "datetime_start": "2025-08-14 15:35:49.881619",
+            "datetime_complete": "2025-08-14 15:35:49.912706",
+            "duration": "0 days 00:00:00.031087",
+            "params_C": 0.015289228934752635,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 47,
+            "value": 0.7981346899224807,
+            "datetime_start": "2025-08-14 15:35:49.913697",
+            "datetime_complete": "2025-08-14 15:35:50.616616",
+            "duration": "0 days 00:00:00.702919",
+            "params_C": 55.4376111984742,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 48,
+            "value": 0.8012354651162792,
+            "datetime_start": "2025-08-14 15:35:50.617618",
+            "datetime_complete": "2025-08-14 15:37:02.944076",
+            "duration": "0 days 00:01:12.326458",
+            "params_C": 7189.207655920235,
+            "state": "COMPLETE"
+        },
+        {
+            "number": 49,
+            "value": 0.5527979651162791,
+            "datetime_start": "2025-08-14 15:37:02.944076",
+            "datetime_complete": "2025-08-14 15:37:02.989080",
+            "duration": "0 days 00:00:00.045004",
+            "params_C": 0.00022746290518520777,
+            "state": "COMPLETE"
+        }
+    ]
+}
